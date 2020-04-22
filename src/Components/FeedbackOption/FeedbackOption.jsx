@@ -5,9 +5,9 @@ import { Button, Wrapper } from "./FeedbackOption.styles";
 const FeedbackOption = ({ options, onCounterFeedback }) => {
   return (
     <Wrapper>
-      {options.map((name) => (
-        <Button key={name} type="button" onClick={onCounterFeedback}>
-          {name}
+      {options.map((option) => (
+        <Button key={option} type="button" onClick={onCounterFeedback}>
+          {option}
         </Button>
       ))}
     </Wrapper>
